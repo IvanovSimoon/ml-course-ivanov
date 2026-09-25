@@ -1,0 +1,19 @@
+[
+  "Pclass",
+  "Sex_Encoded",
+  "Age",
+  "SibSp",
+  "Parch",
+  "Fare",
+  "Family_Size",
+  "Is_Alone",
+  "Embarked_Q",
+  "Embarked_S",
+  "Age_teen",
+  "Age_adult",
+  "Age_middle",
+  "Age_senior",
+  "Fam_small",
+  "Fam_medium",
+  "Fam_large"
+]
