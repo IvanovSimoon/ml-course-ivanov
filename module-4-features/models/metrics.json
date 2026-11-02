@@ -1,0 +1,62 @@
+{
+  "dataset": "Online Shoppers Purchasing Intention",
+  "n_features": 24,
+  "n_train": 9864,
+  "n_test": 2466,
+  "models": {
+    "random_forest": {
+      "accuracy": 0.8763179237631792,
+      "precision": 0.5768463073852296,
+      "recall": 0.756544502617801,
+      "f1": 0.6545866364665912,
+      "roc_auc": 0.9247055601893257,
+      "train_time_sec": 0.45220255851745605
+    },
+    "xgboost": {
+      "accuracy": 0.8848337388483374,
+      "precision": 0.6065217391304348,
+      "recall": 0.7303664921465969,
+      "f1": 0.66270783847981,
+      "roc_auc": 0.9247143531870848,
+      "train_time_sec": 0.3549201488494873
+    },
+    "lightgbm": {
+      "accuracy": 0.8751013787510138,
+      "precision": 0.5711538461538461,
+      "recall": 0.7774869109947644,
+      "f1": 0.6585365853658537,
+      "roc_auc": 0.9243726824170193,
+      "train_time_sec": 1.8691730499267578
+    },
+    "catboost": {
+      "accuracy": 0.8686131386861314,
+      "precision": 0.552536231884058,
+      "recall": 0.7984293193717278,
+      "f1": 0.6531049250535332,
+      "roc_auc": 0.9258185024771132,
+      "train_time_sec": 1.0752441883087158
+    },
+    "lightgbm_tuned": {
+      "accuracy": 0.8645579886455799,
+      "precision": 0.5406779661016949,
+      "recall": 0.8350785340314136,
+      "f1": 0.6563786008230452,
+      "roc_auc": 0.9304373385856841,
+      "train_time_sec": 0.14203214645385742,
+      "best_params": {
+        "n_estimators": 250,
+        "num_leaves": 15,
+        "max_depth": 6,
+        "learning_rate": 0.02544071161518494,
+        "subsample": 0.9434367149086189,
+        "colsample_bytree": 0.8865116435601358,
+        "min_child_samples": 36,
+        "reg_alpha": 5.516593184335302,
+        "reg_lambda": 0.04023815508490923
+      },
+      "cv_best_roc_auc": 0.9341231286937657,
+      "n_trials": 30
+    }
+  },
+  "best_model": "LightGBM (Optuna)"
+}
